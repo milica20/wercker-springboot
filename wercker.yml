@@ -15,7 +15,7 @@ push:
         repository: $DOCKER_REPOSITORY
         registry: https://index.docker.io/v1/
         cmd: java -jar  /pipeline/source/target/springbootdemo-0.0.1.war
-deploy-accs:
+deploy:
   steps:
     # Deploy to DockerHub
     - internal/docker-push:
